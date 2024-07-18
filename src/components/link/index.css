@@ -1,0 +1,13 @@
+.link {
+    color: rgb(73, 194, 232);
+    text-decoration: none;
+
+}
+
+.link:hover {
+    color: rgba(73, 194, 232, 0.7);
+}
+
+.link:visited {
+    color: rgb(73, 194, 232);
+}

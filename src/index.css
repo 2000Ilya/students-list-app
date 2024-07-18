@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Geometria;
+  src: url(./static/fonts/Geometria/Geometria-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url(./static/fonts/Geometria/Geometria.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url(./static/fonts/Geometria/Geometria-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url(./static/fonts/Geometria/Geometria-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  font-family: Geometria;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}

@@ -1,0 +1,8 @@
+.avatar {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: 15px solid rgba(255, 255, 255, 0.6);
+    outline-offset: -2px;
+}

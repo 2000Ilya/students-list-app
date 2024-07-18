@@ -1,0 +1,20 @@
+.search-bar-container {
+    height: 48px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background: #ffffff;
+    filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.07));
+    padding: 0 20px;
+    gap: 16.5px;
+    z-index: 1;
+}
+
+.search-bar-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0;
+    height: 100%;
+}

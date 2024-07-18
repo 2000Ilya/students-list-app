@@ -1,0 +1,35 @@
+.table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.table th {
+    text-align: left;
+    padding: 0 10px 16px;
+    font-weight: 300;
+}
+
+.table td {
+    height: 40px;
+    font-weight: 500;
+    padding: 12.5px 10px;
+}
+
+.table tbody {
+    background: #ffffff;
+    filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.07));
+    border-radius: 6px;
+}
+
+.table tbody tr:first-child td,
+.table tbody tr:last-child td {
+    padding-top: 26px;
+}
+
+.table tbody td:first-child {
+    padding-left: 20px;
+}
+
+.table tbody td:last-child {
+    padding-right: 20px;
+}
