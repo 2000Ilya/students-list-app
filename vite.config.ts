@@ -17,5 +17,5 @@ export default defineConfig({
       '@static': `${path.resolve(__dirname, "./src/static/")}`,
       '@views': `${path.resolve(__dirname, "./src/views/")}`,
     },
-  },
+  }
 });

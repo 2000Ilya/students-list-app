@@ -1,7 +1,10 @@
-version: "3.9"
+version: '3.4'
 
 services:
   app:
-    build: .
+    image: app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     ports:
-      - "8000"  
+      - 3000:3000

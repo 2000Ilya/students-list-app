@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+## Локальная сборка приложения с использованием Docker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+В корневой папке проекта выполнить команды:
+```bash
+# Собрать контейнер
+docker-compose build
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+# Запустить контейнер
+docker-compose up
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+# Удалить все запущенные контейнеры
+docker-compose down
+```
+
+Затем нужно перейти по ссылке <a href="http://localhost:3000/">http://localhost:3000/</a>
+
+## Локальный запуск приложения с использованием Node
+В корневой папке проекта выполнить команды:
+
+```bash
+# Установить зависимости
+npm i
+
+# Запустить приложение
+npm run dev
+```
+
+## Приложение
+
+Приложение имеет два вида:
+
+### Мобильный 
+<center><img src="./readme-assets/mobile-view.png" height="400px"></center>
+
+### Десктопный
+<center><img src="./readme-assets/desktop-view.png" width="100%"></center>
