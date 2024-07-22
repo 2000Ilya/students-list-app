@@ -28,6 +28,13 @@ body {
   font-weight: 400;
 }
 
+#root {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 button {
   border: none;
   background: none;

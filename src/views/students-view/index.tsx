@@ -29,11 +29,13 @@ export const StudentsView = () => {
                     <SearchBar value={searchText} onChange={setSearchText} />
                     <Dropdown value={sort?.sortObject || null} onChange={onDropdownChange} items={dropdownItems}></Dropdown>
                 </div>
-                {
-                    isMobile ?
-                        <List data={tableData} onDelete={students.deleteStudent} /> :
-                        <Table data={tableData} onDelete={students.deleteStudent} />
-                }
+                <div className='students-view__items-container'>
+                    {
+                        isMobile ?
+                            <List data={tableData} onDelete={students.deleteStudent} /> :
+                            <Table data={tableData} onDelete={students.deleteStudent} />
+                    }
+                </div>
             </div>
         )
 

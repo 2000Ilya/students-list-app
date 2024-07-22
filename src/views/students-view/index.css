@@ -1,12 +1,17 @@
 .students-view {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 74px 20px 30px;
+    padding: 74px 0 0;
+    height: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .students-view__title {
     font-size: 40px;
     margin: 0 0 47px;
+    padding: 0 20px;
 }
 
 .students-view__search-panel {
@@ -14,6 +19,14 @@
     flex-direction: row;
     gap: 20px;
     margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.students-view__items-container {
+    flex: 1;
+    height: 0;
+    overflow: auto;
+    padding: 0 20px 30px;
 }
 
 .students-view__mobile-view.students-view {
